@@ -3,10 +3,11 @@ import {useState} from "react";
 export default function Counter(){
    //let [stateVariable, setStateVariable]= useState(0);
    let [count,setCount]= useState(0);
-   
+   console.log("component is rendered");
+   console.log(`count= ${count}`);
    let incCount=()=>{
     setCount(count+1);
-    //console.log(count);
+    console.log(count);
    };
 
     //the below function does not increase the count variable value in the component
